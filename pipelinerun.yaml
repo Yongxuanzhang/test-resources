@@ -11,4 +11,4 @@ spec:
     - name: revision
       value: main
     - name: pathInRepo
-      value: test-resources/example-pipeline.yaml
+      value: example-pipeline.yaml

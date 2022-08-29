@@ -13,7 +13,7 @@ spec:
         - name: revision
           value: main
         - name: pathInRepo
-          value: test-resources/example-task1.yaml
+          value: example-task1.yaml
     - name: example-task2
       taskRef:
         resolver: git
@@ -23,7 +23,7 @@ spec:
         - name: revision
           value: main
         - name: pathInRepo
-          value: test-resources/example-task2.yaml
+          value: example-task2.yaml
     - name: example-task3
       taskRef:
         resolver: git
@@ -33,4 +33,4 @@ spec:
         - name: revision
           value: main
         - name: pathInRepo
-          value: test-resources/example-task3.yaml
+          value: example-task3.yaml
