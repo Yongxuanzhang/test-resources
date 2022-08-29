@@ -54,13 +54,13 @@ spec:
           value: main
         - name: pathInRepo
           value: example-task5.yaml
-    - name: example-task6
-      taskRef:
-        resolver: git
-        resource:
-        - name: url
-          value: https://github.com/Yongxuanzhang/test-resources.git
-        - name: revision
-          value: main
-        - name: pathInRepo
-          value: example-task6.yaml
+    # - name: example-task6
+    #   taskRef:
+    #     resolver: git
+    #     resource:
+    #     - name: url
+    #       value: https://github.com/Yongxuanzhang/test-resources.git
+    #     - name: revision
+    #       value: main
+    #     - name: pathInRepo
+    #       value: example-task6.yaml
