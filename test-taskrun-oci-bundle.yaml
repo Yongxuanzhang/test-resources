@@ -1,0 +1,15 @@
+kind: TaskRun
+apiVersion: tekton.dev/v1beta1
+metadata:
+  name: example-tr-oci
+spec:
+  taskRef:
+    resolver: bundles
+    resource:
+    resource:
+    - name: bundle
+      value: docker.io/zyx1200/testtask:latest
+    - name: name
+      value: example-task
+    - name: kind
+      value: task

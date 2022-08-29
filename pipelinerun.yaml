@@ -1,0 +1,14 @@
+apiVersion: tekton.dev/v1beta1
+kind: PipelineRun
+metadata:
+  name: example-pipelinerun
+spec:
+  pipelineRef:
+    resolver: git
+    resource:
+    - name: url
+      value: https://github.com/Yongxuanzhang/test-resources.git
+    - name: revision
+      value: main
+    - name: pathInRepo
+      value: test-resources/example-pipeline.yaml

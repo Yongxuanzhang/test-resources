@@ -1,0 +1,36 @@
+apiVersion: tekton.dev/v1beta1
+kind: Pipeline
+metadata:
+  name: example-pipeline
+spec:
+  tasks:
+    - name: example-task
+      taskRef:
+        resolver: git
+        resource:
+        - name: url
+          value: https://github.com/Yongxuanzhang/test-resources.git
+        - name: revision
+          value: main
+        - name: pathInRepo
+          value: test-resources/example-task1.yaml
+    - name: example-task2
+      taskRef:
+        resolver: git
+        resource:
+        - name: url
+          value: https://github.com/Yongxuanzhang/test-resources.git
+        - name: revision
+          value: main
+        - name: pathInRepo
+          value: test-resources/example-task2.yaml
+    - name: example-task3
+      taskRef:
+        resolver: git
+        resource:
+        - name: url
+          value: https://github.com/Yongxuanzhang/test-resources.git
+        - name: revision
+          value: main
+        - name: pathInRepo
+          value: test-resources/example-task3.yaml
